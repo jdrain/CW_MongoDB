@@ -73,10 +73,10 @@ def insert_shipment(date, recipient, scientist, address):
     sh.save()
     return sh
 
-def insert_vial(amount, concentration, quanity, sample, shipment):
+def insert_vial(amount, concentration, quantity, sample, shipment):
 
     time = datetime.datetime.now()
-    v = Vials(amount=amount, concentration=concentration, quanity=quanity,
+    v = Vials(amount=amount, concentration=concentration, quantity=quantity,
               sample=sample, shipment=shipment, time=time)
     v.save()
     return v
